@@ -1,0 +1,72 @@
+<head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="scripts.js" type="text/javascript"></script>
+    <script src="debounce.min.js" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+
+<body>
+<div class="full-screen" style="position: relative; bottom: 6%;">
+    <div class="wrap">
+        <div class="time" style="position: relative; top: 5px; left: -60px;">12:00</div>
+
+        <div class="vehicle" > 
+        <div class="speed" style="position: relative; left: -8px;"> 
+            <svg width="53" height="53">
+                <circle class="backgroundCircle" stroke="#FFFFFF" stroke-width="4.5" style="stroke-opacity: 0.3;" fill="transparent" r="21" cx="25" cy="25" stroke-dasharray="85.2 30" stroke-dashoffset="0"/>
+                <circle class="progress progress-speed" stroke="white" stroke-width="4.4" style="stroke-opacity: 1;" fill="transparent" r="21" cx="25" cy="25" stroke-dasharray="84 30" stroke-dashoffset="0"/>
+            </svg>
+            <div class="speedamount" style="position: relative; bottom: 35px;"> 100 </div>
+            <div class="smalltext" style="position: relative; left: 3px; bottom: 29px;"> km/s </div>
+		</div>
+        <div class="fuell" style="position: relative; bottom: 81.5px; right: 4.0%;">
+            <svg class="circle" width="50" height="50">
+                <circle class="backgroundCircle" stroke="#FFFFFF" stroke-width="4.5" style="stroke-opacity: 0.3;" fill="transparent" r="21" cx="25" cy="25" stroke-dasharray="85.2 30" stroke-dashoffset="0"/>
+                <circle class="progress progress-fuel" stroke="white" stroke-width="4.4" style="stroke-opacity: 1;" fill="transparent" r="21" cx="25" cy="25" stroke-dasharray="84 30" stroke-dashoffset="0"/>
+            </svg>
+            <div class="fuelamount"  style="position: relative; right: 4px; bottom: 35px;"> 100 </div>  
+            <div class="smalltext" style="position: relative; right: 1px; bottom: 29px;"> yakıt </div>
+		</div>
+            <div class="atlamount left"> 0 </div> <div class="atlamounttxt smalltext left"> FT </div>
+            <div class="ENGINE left"> <img src='engine.png' width='25px' height='25px'> </div>
+            <div class="FUEL left"> <img src='gas.png' width='25px' height='25px'> </div>
+            <div class="harness left"> HARNESS </div>
+            <div class="nos left"> 100 </div> 
+        </div>
+        <div class="street" style="position: relative; bottom: 130px; right: 105px;">
+            <div class="direction"><div class="image"></div></div>
+            <div class="street-txt">Los Santos | Wicket St | Hawick</div>
+            </div>
+        </div>
+        <div class="belt left"> <img src='belt.png' style= "position: relative;right: 90px; bottom: 200px;" width='25px' height='25px'> </div>
+    </div>
+</div>
+</body>
+
+<head>
+	<!-- Need to include jQuery! -->
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script>
+		var audioPlayer = null;
+		// Listen for NUI Messages.
+		window.addEventListener('message', function(event) {
+			// Check for playSound transaction
+			if (event.data.transactionType == "playSound") {
+			
+			  if (audioPlayer != null) {
+				audioPlayer.pause();
+			  }
+
+			  audioPlayer = new Audio("./sounds/" + event.data.transactionFile + ".ogg");
+			  audioPlayer.volume = event.data.transactionVolume;
+			  audioPlayer.play();
+
+			}
+		});
+	</script>
+</head>

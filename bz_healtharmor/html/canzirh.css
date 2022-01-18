@@ -1,0 +1,77 @@
+﻿.can {
+        position: fixed;
+        bottom: -23vh;
+        left: -22.3vh;
+        overflow: hidden;
+        width: 35.629vh;
+        text-align: center;
+}
+
+.zirh {
+        position: fixed;
+        bottom: -23vh;
+        left: -23.9vh;
+        overflow: hidden;
+        width: -35.629vh;
+        text-align: center;
+}
+
+.circlea {
+	display: flex;
+	position: fixed;
+	bottom: -9.4%;
+	left: -6.0%;
+}
+
+.circleb {
+	display: flex;
+	position: fixed;
+	bottom: -9.4%;
+	left: -6.0%;
+}
+
+ .progress {
+   -webkit-transition: 0.35s stroke-dashoffset;
+   -o-transition: 0.35s stroke-dashoffset;
+   transition: 0.35s stroke-dashoffset;
+   -webkit-transform: rotate(140deg);
+   -ms-transform: rotate(140deg);
+   transform: rotate(140deg);
+   -webkit-transform-origin: 50% 50%;
+   -ms-transform-origin: 50% 50%;
+   transform-origin: 50% 50%;
+ } 
+
+.progressplayer {
+  -webkit-transition: 0.35s stroke-dashoffset;
+  -o-transition: 0.35s stroke-dashoffset;
+  transition: 0.35s stroke-dashoffset;
+  -webkit-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  transform: rotate(-270deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.progressplayerx {
+  -webkit-transition: 0.35s stroke-dashoffset;
+  -o-transition: 0.35s stroke-dashoffset;
+  transition: 0.35s stroke-dashoffset;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.backgroundCircle {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+

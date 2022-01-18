@@ -1,0 +1,399 @@
+
+html {
+  overflow: hidden;
+
+  color:white;
+
+font-family: Arial, Helvetica, sans-serif;
+
+letter-spacing: 0.7px;
+font-size:14px;
+text-shadow: 2px 2px 2px  rgba(0,0,0,1.0);
+
+font-weight: 600;
+text-decoration: none;
+font-style: normal;
+font-variant: small-caps;
+text-transform: none;
+
+   text-shadow: 1px 1px 1px rgba(1,1,1,1);
+}
+.vehicle {
+  display:block;
+  min-width:100%;
+}
+
+.time {
+  top:-30px;
+  display:block;
+  min-width:100%;
+  margin-left:0px;
+  padding-bottom:1%;
+}
+
+.street {
+  display:block;
+  min-width:100%;
+  clear:both;
+  padding-top:1%;
+  margin-left:25px;
+}
+
+.street-txt {
+  margin-top: 5px;
+  padding-left: 115px;
+}
+
+.left {
+  float:left;
+}
+
+.smalltext {
+  font-size:12px;
+  margin-left:9px;
+}
+
+.fuelamount {
+  position: relative;	
+	font-size: 15;	
+	text-align: center;	
+	width: 5.5vh;
+}
+
+.speedamount {	
+  position: relative;	
+  bottom: 100%;	
+  font-size: 15;	
+  text-align: center;	
+  width: 5.5vh;	
+}	
+.speedamount .stat{	
+	background: linear-gradient(to top, #5b5b5b 90%, #1bd295 90%);	
+	text-align: right;	
+}	
+.speedamount .stat span{	
+	white-space: nowrap;	
+	right: 20px;	
+}
+
+.atlamount {
+  margin-left:25px;
+}
+
+.belt {
+  margin-left:25px;
+  margin-top:-5px;
+}
+
+.harness {
+  margin-left:25px;
+}
+.nos {
+  margin-left:25px;
+}
+.ENGINE {
+  margin-left:25px;	
+  margin-top:-5px;
+}
+.fuel {
+  margin-left:25px;
+  margin-top:-5px;
+}
+
+.red {
+  color:red;
+
+font-weight: bold; 
+letter-spacing: 1px; 
+line-height: 1; 
+}
+
+.green {
+  color:green;
+
+font-weight: bold; 
+letter-spacing: 1px; 
+line-height: 1; 
+}
+.blue {
+  color:rgb(102, 143, 255);
+ 
+font-weight: bold; 
+letter-spacing: 1px; 
+line-height: 1; 
+text-shadow: 1px 1px black;
+}
+.yellow {
+  color:yellow;
+
+font-weight: bold; 
+letter-spacing: 1px; 
+line-height: 1; 
+text-shadow: 1px 1px black;
+}
+
+.wrap {
+  margin-top:51%;
+  margin-left:16%;
+}
+.full-screen {
+  display:none;
+  width: 100%;
+  height:100%;
+}
+
+@media(min-width:2100px){	
+	.stat,	
+	.stat .icon {	
+		height: 44px;	
+	}	
+}	
+@media(min-width:2200px){	
+	.stat,	
+	.stat .icon {	
+		height: 46px;	
+	}	
+	.status{	
+		width:280px;	
+	}	
+	.stat{	
+		width:251px;	
+	}	
+	.stat span {	
+		font-size: 14px;	
+		line-height: 15px;	
+		margin-top: 2px;	
+	}	
+}	
+@media(min-width:2300px){	
+	.stat,	
+	.stat .icon {	
+		height: 48px;	
+	}	
+}	
+@media(min-width:2400px){	
+	.stat,	
+	.stat .icon {	
+		height: 50px;	
+	}	
+	.status{	
+		width:300px;	
+	}	
+	.stat{	
+		width:271px;	
+	}	
+}	
+@media(min-width:2500px){	
+	.stat,	
+	.stat .icon {	
+		height: 52px;	
+	}	
+}	
+@media(max-width:1800px){	
+	.stat,	
+	.stat .icon {	
+		height: 38px;	
+	}	
+}	
+@media(max-width:1700px){	
+	.stat,	
+	.stat .icon {	
+		height: 36px;	
+	}	
+}	
+@media(max-width:1600px){	
+	.stat,	
+	.stat .icon {	
+		height: 34px;	
+	}	
+	.status{	
+		width:240px;	
+	}	
+	.stat{	
+		width:211px;	
+	}	
+	.stat span {	
+		font-size: 12px;	
+		line-height: 12px;	
+		margin-top: 2px;	
+	}	
+	.stat .icon img {	
+		margin-top: 2px;	
+	}	
+}	
+@media(max-width:1500px){	
+	.stat,	
+	.stat .icon {	
+		height: 32px;	
+	}	
+}	
+@media(max-width:1400px){	
+	.stat,	
+	.stat .icon {	
+		height: 30px;	
+	}	
+	.status{	
+		width:225px;	
+	}	
+	.stat{	
+		width:196px;	
+		margin-bottom: 4px;	
+	}	
+}	
+@media(max-width:1300px){	
+	.stat,	
+	.stat .icon {	
+		height: 28px;	
+	}	
+}	
+@media(max-width:1200px){	
+	.stat,	
+	.stat .icon {	
+		height: 26px;	
+	}	
+	.stat span{	
+		font-size:10px;	
+		line-height: 10px;	
+	}	
+	.status{	
+		width:200px;	
+	}	
+	.stat{	
+		width:171px;	
+	}	
+}	
+@media(max-width:1100px){	
+	.stat,	
+	.stat .icon {	
+		height: 24px;	
+	}	
+}	
+.progress {	
+	-webkit-transition: 0.35s stroke-dashoffset;	
+	-o-transition: 0.35s stroke-dashoffset;	
+	transition: 0.35s stroke-dashoffset;	
+	-webkit-transform: rotate(140deg);	
+	-ms-transform: rotate(140deg);	
+	transform: rotate(140deg);	
+	-webkit-transform-origin: 50% 50%;	
+	-ms-transform-origin: 50% 50%;	
+	transform-origin: 50% 50%;	
+}	
+.backgroundCircle, .outer {	
+	-webkit-transform: rotate(-180deg);	
+	-ms-transform: rotate(-180deg);	
+	transform: rotate(-180deg);	
+	-webkit-transform-origin: 50% 50%;	
+	-ms-transform-origin: 50% 50%;	
+	transform-origin: 50% 50%;	
+}	
+.kolko {	
+  -webkit-transform: scale(0.8);	
+  -ms-transform: scale(0.8);	
+  transform: scale(0.8);	
+text-align: center;	
+background-repeat: no-repeat;	
+background-position: 50% 40%;	
+background-size: 45% 45%;	
+}	
+  .kolko span {	
+    color: rgba(255, 255, 255, 0.8);	
+    font-size: 12px;	
+}	
+  .kolko svg {	
+    opacity: 1 !important; }	
+.kolko span {	
+opacity: 0;	
+}	
+.kolko span:after {	
+position: relative;	
+content: '%';	
+font-size: 7px; }	
+.kolko g {	
+-webkit-transform: translate(16px, 13px);	
+-ms-transform: translate(16px, 13px);	
+transform: translate(16px, 13px); }	
+.licznik {	
+	height: 100%;	
+	width: 100%; }	
+  .licznik .licznik2 {	
+    position: relative;	
+    height: 200%;	
+    -webkit-transform: translateX(-50%);	
+    -ms-transform: translateX(-50%);	
+    transform: translateX(-50%); }	
+    .licznik .licznik2 div {	
+      display: inline-block;	
+      vertical-align: middle;	
+      margin: 0 10px; }	
+      .licznik .licznik2 div svg {	
+        opacity: .2; }	
+    .licznik .licznik2 .active svg {	
+      opacity: .8; }	
+  .licznik .licznik2 .speedometer {	
+	width: 100px;	
+	height: 100px;	
+	text-align: center;	
+	-webkit-clip-path: polygon(100% 45%, 80% 45%, 60% 100%, 0% 100%, 0% 0%, 100% 0%);	
+	clip-path: polygon(100% 45%, 80% 45%, 60% 100%, 0% 100%, 0% 0%, 100% 0%); }	
+	.licznik .licznik2 .speedometer svg {	
+	  opacity: 1;	
+	  position: absolute;	
+	  left: 50%;	
+	  top: 50%;	
+	  -webkit-transform: scale(2) translate(-25%, -25%);	
+	  -ms-transform: scale(2) translate(-25%, -25%);	
+	  transform: scale(2) translate(-25%, -25%); }	
+	.licznik .licznik2 .speedometer .outer {	
+	  opacity: .3;	
+	  -webkit-transform: rotate(180deg) scale(1.2);	
+	  -ms-transform: rotate(180deg) scale(1.2);	
+	  transform: rotate(180deg) scale(1.2); }	
+	.licznik .licznik2 .speedometer .text {	
+	  width: 100%;	
+	  position: absolute;	
+	  top: 50%;	
+	  left: 50%;	
+	  -webkit-transform: translate(-50%, -50%);	
+	  -ms-transform: translate(-50%, -50%);	
+	  transform: translate(-50%, -50%);	
+	  margin: 0; }	
+	  .licznik .licznik2 .speedometer .text .speed {	
+		color: white;	
+		font-size: 27px;	
+		display: block; }	
+	  .licznik .licznik2 .speedometer .text .kmh {	
+		color: rgba(255, 255, 255, 0.5);	
+		font-size: 11px;	
+		display: block;	
+		text-transform: uppercase; }
+
+/* Compass -------------------- */
+.lower {
+  margin-top: 53% !important;
+}
+.timelower {
+  padding-bottom: 0px !important;
+}
+.hide {
+  display: none !important;
+}
+.direction {
+  color: #111111;
+  background-color: rgba(226, 226, 226, 0);
+  /* border-radius: 5px; */
+  width: 100px;
+  height: 26px;
+  overflow: hidden;
+  float: left;
+}
+
+.direction>.image {
+  height: 100%;
+  background-position: center center;
+  background-size: 400px;
+  background-repeat: repeat;
+  width: 800%;
+  z-index: 1;
+  background-image: url('compass.png');
+}

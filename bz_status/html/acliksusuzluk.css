@@ -1,0 +1,71 @@
+﻿*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    margin: 0;
+    padding: 0;
+}
+
+body,html { width: 100%; height: 100%;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+                              
+
+}
+
+body { /*background: url('https://i.imgur.com/MoYBh1e.jpg') center center no-repeat; background-size: cover;*/ }
+
+#ui { position: relative; width: 100%; height: 100%; overflow: hidden; }
+div.separator { display: block; clear: both; width: 100%; }
+
+
+
+
+.iconhunger { display: block; position: relative; padding: 10px 8px; margin: 7px 1px 0 15px; width: 40px; height: 40px; border-radius: 100px; overflow: hidden; background: rgba(215,145,55,0.35); border: 1.1px solid #d79137; }
+.iconthirst { display: block; position: relative; padding: 10px 8px; margin: 7px 1px 0 15px; width: 35px; height: 35px; border-radius: 100px; overflow: hidden; background: rgba(25,129,170,0.35); border: 1.1px solid #1981aa; }
+.iconstamina { display: block; position: relative; padding: 10px 8px; margin: 7px 1px 0 15px; width: 28px; height: 28px; border-radius: 100px; overflow: hidden; background: rgba(128,128,128,0.35); border: 1.1px solid #808080; }
+.iconoxygen { display: block; position: relative; padding: 10px 8px; margin: 7px 1px 0 15px; width: 28px; height: 28px; border-radius: 100px; overflow: hidden; background: rgba(45,75,140,0.35); border: 1.1px solid #2d4b8c; }
+.iconstress { display: block; position: relative; padding: 10px 8px; margin: 7px 1px 0 15px; width: 28px; height: 28px; border-radius: 100px; overflow: hidden; background: rgba(175,80,70,0.35); border: 1px solid #af5046; }
+
+.iconhunger i { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #FFF; z-index: 11; font-size: 15px; }
+.iconhunger img { width: 16px; margin: -3px 0 0 0; }
+.iconhunger span { display: block; position: absolute; left: 50%; bottom: 0; transform: translate(-50%,0); width: 100%; height: 100%; }
+
+.iconthirst i { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #FFF; z-index: 11; font-size: 15px; }
+.iconthirst img { width: 16px; margin: -3px 0 0 0; }
+.iconthirst span { display: block; position: absolute; left: 50%; bottom: 0; transform: translate(-50%,0); width: 100%; height: 100%; }
+
+.iconstamina i { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #FFF; z-index: 11; font-size: 15px; }
+.iconstamina img { width: 16px; margin: -3px 0 0 0; }
+.iconstamina span { display: block; position: absolute; left: 50%; bottom: 0; transform: translate(-50%,0); width: 100%; height: 100%; }
+
+.iconoxygen i { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #FFF; z-index: 11; font-size: 15px; }
+.iconoxygen img { width: 16px; margin: -3px 0 0 0; }
+.iconoxygen span { display: block; position: absolute; left: 50%; bottom: 0; transform: translate(-50%,0); width: 100%; height: 100%; }
+
+.iconstress i { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #FFF; z-index: 11; font-size: 15px; }
+.iconstress img { width: 16px; margin: -3px 0 0 0; }
+.iconstress span { display: block; position: absolute; left: 50%; bottom: 0; transform: translate(-50%,0); width: 100%; height: 100%; }
+
+.info { position: absolute; }
+
+.info.player { top: 95px; right: 1px; text-align: right;}
+
+.info.player #status { clear: both; }
+.info.player #status ul { margin: 943px 1641px 0 0;  }
+.info.player #status ul li { float: left;}
+.info.player #status ul li#stamina span { width: 30px; height: 30px; background: linear-gradient(180deg, #808080 0%, #808080 100%); }
+.info.player #status ul li#hunger span { width: 40px; height: 40px; background: linear-gradient(180deg, #d79137 0%, #d79137 100%); }
+.info.player #status ul li#thirst span { width: 35px; height: 35px; background: linear-gradient(180deg, #1981aa 0%, #1981aa 100%); }
+.info.player #status ul li#stress span { width: 28px; height: 28px; background: linear-gradient(180deg, #af5046 0%, #af5046 100%); }
+.info.player #status ul li#oxygen span { width: 28px; height: 28px; background: linear-gradient(180deg, #2d4b8c 0%, #2d4b8c 100%); }
